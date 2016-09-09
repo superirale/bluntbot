@@ -1,14 +1,14 @@
 class PostsController < ApplicationController
   get '/' do
-  	@posts = Post.all
-	erb :"home/posts"
+  	 @posts = Post.all
+
+	   erb :"home/posts"
   end
 
   post '/' do
   	if params.any?
-		post = Post.create({"title": params[:title], "body": params[:message]})
-
-		redirect '/posts'
+		  post = Post.create({"title": params[:title], "body": params[:message]})
+		  redirect '/posts'
   	end
   end
 

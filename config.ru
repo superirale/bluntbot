@@ -11,7 +11,7 @@ require 'json'
 
 # debug for datamapper
 DataMapper::Logger.new($stdout, :debug)
-DataMapper.setup(:default, 'mysql://root:omokhudu@localhost/suggie')
+DataMapper.setup(:default, 'postgres://root:omokhudu@localhost/bluntbot')
 
 # pull in the helpers and controllers
 Dir.glob('./app/{models, helpers,controllers}/*.rb').each { |file| require file }
@@ -23,3 +23,4 @@ DataMapper.finalize
 
 # map the controllers to routes
 map('/posts') { run PostsController }
+map('/account') { run UsersController }

@@ -1,0 +1,14 @@
+LOG:  database system was shut down at 2016-09-08 19:24:48 WAT
+LOG:  MultiXact member wraparound protections are now enabled
+LOG:  database system is ready to accept connections
+LOG:  autovacuum launcher started
+FATAL:  database "usmanirale" does not exist
+FATAL:  database "usmanirale" does not exist
+FATAL:  database "usmanirale" does not exist
+ERROR:  syntax error at or near "." at character 45
+STATEMENT:  select * from teams
+	inner join users ON user.team_id = team.id
+LOG:  autovacuum launcher shutting down
+LOG:  received smart shutdown request
+LOG:  shutting down
+LOG:  database system is shut down

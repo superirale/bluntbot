@@ -4,7 +4,9 @@ include DataMapper::Resource
 	property :id,         Serial    # An auto-increment integer key
 	property :team_id,	  Integer   # An integer key
 	property :name,       String    # A varchar type string, for short strings
-	property :pasword,    String    # A varchar type string, for short strings
+	property :username,   String    # A varchar type string, for short strings
+	property :email,      String    # A varchar type string, for short strings
+	property :password,   String    # A varchar type string, for short strings
 	property :created_at, DateTime  # A DateTime, for any date you might like.
 	property :updated_at, DateTime  # A DateTime, for any date you might like.
 
